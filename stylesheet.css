@@ -34,3 +34,8 @@ input:not([type="radio"]):not([type="checkbox"]), button{
     /* hou mouse cursor its appeared */
     cursor: initial;
 }
+
+body {
+    background: var(--light); 
+    color: var(--dark); 
+}
