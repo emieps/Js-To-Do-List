@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <!-- Main element. dominan content of the body-->
+    <main class='app'>
+
+        <section class="greeting">
+            <h1>What's up, <input type="text" name="greeting-name" placeholder="insert your name :D .."></h1>
+        </section>
+
+        <section class="create-todo">
+            <!-- H3 changed -->
+            <h3>CREATE A TO DO</h3>
+            <form>
+                <label for="todo-create">What's on your todo?</label>
+                <input type="text" id="todo-create" name="todo-create" placeholder="e.g. make cookies :3"><br><br>
+                <!-- Btn Groups  -->
+                <label for="category-options">Pick a category:</label>
+                <div class="category-options" id="category-option">
+                    <!-- name attribute make the relatives  -->
+                    <input type="radio" id="business" name="category" value="business">
+                    <label for="business">Business</label><br>
+                    <!-- Best practice  -->
+                    <input type="radio" id="personal" name="category" value="personal">
+                    <label for="personal">Personal</label><br>
+                    <button>Personal</button>
+                </div>
+                <button type="submit" value="Submit">ADD TODO</button>
+            </form>
+        </section>
+
+        <!-- section.todo-list -->
+        <section class="todo-list">
+            <h3>To DO LIST</h3>
+            <!-- div.list#todo-list -->
+            <div class="list" id="todo-list">
+
+                <!-- Dummy info for styling  -->
+                <div class="todo-item">
+                    <!-- Check box to  strikethrougt the ocntent -->
+                    <label>
+                        <input type="checkbox">
+                    </label>
+
+                    <div class="todo-content">
+                        <!-- Check box to  strikethrougt the ocntent -->
+                        <label>
+                            <input type="text" class="todo-item" name="todo-item" value="make a video" readonly><br><br>
+                        </label>
+                    </div>
+                    <!-- Actions buttons  -->
+                    <div class="actions">
+                        <button class="edit">EDIT</button>
+                        <button class="delete">ADD TODO</button>
+                    </div>
+                </div>
+                <!-- / End o Dummy info for styling  -->
+
+                <!-- Dummy info for styling  -->
+                <div class="todo-item">
+                    <!-- Check box to  strikethrougt the ocntent -->
+                    <label>
+                        <input type="checkbox">
+                    </label>
+
+                    <div class="todo-content">
+                        <!-- Check box to  strikethrougt the ocntent -->
+                        <label>
+                            <input type="text" class="todo-item" name="todo-item" value="make a video" readonly><br><br>
+                        </label>
+                    </div>
+                    <!-- Actions buttons  -->
+                    <div class="actions">
+                        <button class="edit">EDIT</button>
+                        <button class="delete">ADD TODO</button>
+                    </div>
+                </div>
+                <!-- / End o Dummy info for styling  -->
+
+            </div>
+
+        </section>
+    </main>
+    <!-- npx live-server .: to see html doc while is being edited -->
+    <script src="app.js"></script>
+</body>
+
+</html>
