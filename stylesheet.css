@@ -101,3 +101,15 @@ label[for="todo-create"], label[for="category-options"] {
     border-radius: 0.5rem;
     box-shadow: var(--shadow);
 }
+
+.create-todo input[type="text"]{
+    /* Display entire box  */
+    display:block; 
+    width: 100%;
+    font-size: 1.125rem;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    color: var(--dark); 
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+}
