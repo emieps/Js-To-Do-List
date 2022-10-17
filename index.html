@@ -21,14 +21,25 @@
             <h1>What's up, <input type="text" name="greeting-name" placeholder="insert your name :D .."></h1>
         </section>
         <section class="create-todo">
-            <h2>CREATE A TO DO</h2>
+            <!-- H3 changed -->
+            <h3>CREATE A TO DO</h3>
             <form>
                 <label for="todo-item">What's on your todo?</label>
-                <input type="text" id="todo-item" name="todo-item"><br><br>
+                <input type="text" id="todo-item" name="todo-item" placeholder="e.g. make cookies :3"><br><br>
                 <!-- Btn Groups  -->
-                <label for="btn-group">Pick a category:</label>
-                <div class="btn-group" id="btn-group">
-                    <button>Bussiness</button>
+                <label for="category-options">Pick a category:</label>
+                <div class="category-options" id="category-option">
+                    <!-- name attribute make the relatives  -->
+                    <!-- <label> -->
+                        <input type="radio" id="business" name="category" value="business" checked>
+                        <label for="business">Business</label><br>
+                        <!-- Use span to be abel to put it  -->
+                    <!-- </label> -->
+                    <!-- <label> -->
+                        <!-- Best practice  -->
+                        <input type="radio" id="personal" name="category" value="personal" checked>
+                        <label for="personal">Personal</label><br>
+                    <!-- </label> -->
                     <button>Personal</button>
                 </div>
                 <button type="submit" value="Submit">ADD TODO</button>
