@@ -41,6 +41,10 @@ body {
     color: var(--dark);
 }
 
+input:not([name="greeting-name"]), label {
+    display:block;
+}
+
 /* em --> relative to the parent font size */
 /* rem --> relative to the font size roo font size*/
 /* Section styling */
