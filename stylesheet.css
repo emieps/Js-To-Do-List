@@ -25,6 +25,7 @@
 
 main{
     margin-left: 4rem;
+    margin-right: 10rem;
     margin-top: 2rem;
 }
 
@@ -75,6 +76,7 @@ label[for="todo-create"], label[for="category-options"] {
 /* Section greeting */
 .greeting{
     display: flex;
+    margin-bottom: 0.5rem; 
 }
 
 .greeting input{
@@ -86,4 +88,16 @@ label[for="todo-create"], label[for="category-options"] {
     font-size: 1.5rem;
     font-weight: 700;
 
+}
+
+.create-todo input[type="text"]{
+    /* Display entire box  */
+    display:block; 
+    width: 100%;
+    font-size: 1.125rem;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    color: var(--dark); 
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
 }
