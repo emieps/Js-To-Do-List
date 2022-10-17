@@ -23,6 +23,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+main{
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
 /* If the input it;s not radio nor checkbox nor button */
 /*  So those that are "input" but reffers to those that contains ifnormation that can be edited :D */
 input:not([type="radio"]):not([type="checkbox"]),
@@ -46,8 +51,7 @@ input:not([name="greeting-name"]), label {
     display:block;
 }
 
-/* em --> relative to the parent font size */
-/* rem --> relative to the font size roo font size*/
+/* em --> relative to the parent font size */s
 /* Section styling */
 section {
     margin: 2rem 0 2rem 0;
@@ -65,5 +69,21 @@ label[for="todo-create"], label[for="category-options"] {
     color: var(--grey);
     font-size: 0.875rem;
     font-weight: 700;
+    margin-bottom: 0.5rem; 
 }
 
+/* Section greeting */
+.greeting{
+    display: flex;
+}
+
+.greeting input{
+    /* margin-left: 0.4rem; */
+    /* Three values: flex-grow | flex-shrink | flex-basis */
+    flex: 1 1 0%; 
+    min-width: 0; 
+    color: var(--dark); 
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
