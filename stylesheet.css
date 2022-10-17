@@ -3,6 +3,7 @@
     /* Declaring varibales */
     --primary: #EA40A4;
     --business: #3A82EE;
+    --grey: #888; 
     /*  we use var to use the variable */
     --personal: var(--primary);
     --light: #EEE;
@@ -59,3 +60,10 @@ h3{
     font-weight: 0.5rem; 
     margin-bottom: 0.5rem; 
 }
+
+label[for="todo-create"], label[for="category-options"] {
+    color: var(--grey);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
