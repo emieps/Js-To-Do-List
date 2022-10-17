@@ -20,5 +20,17 @@
     /* Use so that the element ar einside of the box */
     box-sizing: border-box; 
     font-family: 'Montserrat', sans-serif;
+}
 
+/* If the input it;s not radio nor checkbox nor button */
+/*  So those that are "input" but reffers to those that contains ifnormation that can be edited :D */
+input:not([type="radio"]):not([type="checkbox"]), button{
+    /* control native appearance of UI controls, that are based on operating system's theme. */
+    appearance: none;
+    border: none;
+    /* line drawn outside the element's border. */
+    outline: none; 
+    background: none; 
+    /* hou mouse cursor its appeared */
+    cursor: initial;
 }
