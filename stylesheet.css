@@ -113,3 +113,8 @@ label[for="todo-create"], label[for="category-options"] {
     border-radius: 0.5rem;
     box-shadow: var(--shadow);
 }
+
+.category-options{
+    display: flex;
+    justify-content: space-evenly;
+} 
