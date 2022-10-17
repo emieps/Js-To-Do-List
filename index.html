@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <!-- Main element. dominan content of the body-->
+    <main class='app'>
+        <section class="greeting">
+            <h1>What's up, <input type="text" name="greeting-name" placeholder="insert your name :D .."></h1>
+        </section>
+        <section class="create-todo">
+            <h2>CREATE A TO DO</h2>
+            <form>
+                <label for="todo-item">What's on your todo?</label>
+                <input type="text" id="todo-item" name="todo-item"><br><br>
+                <!-- Btn Groups  -->
+                <label for="btn-group">Pick a category:</label>
+                <div class="btn-group" id="btn-group">
+                    <button>Bussiness</button>
+                    <button>Personal</button>
+                </div>
+                <button type="submit" value="Submit">ADD TODO</button>
+            </form>
+        </section>
+        <section class="list-todo">
+
+
+        </section>
+    </main>
+
+    <!-- npx live-server .: to see html doc while is being edited -->
+    <script src="app.js"></script>
+</body>
+
+</html>
