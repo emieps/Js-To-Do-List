@@ -116,5 +116,39 @@ label[for="todo-create"], label[for="category-options"] {
 
 .category-options{
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    padding: 2rem; 
+    gap: 2rem; 
+    /* align-items: center;
+    height: 100vh; */
 } 
+
+.category-option {
+    background-color: #fff;
+    display:block; 
+    flex-grow: 1;
+    margin:auto;
+     
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+    /* height: 25%;
+    width: 25%; */
+  
+    align-items: center;
+    
+}
+
+.category-option input {
+    color: var(--personal-glow); 
+    border-radius: 0.5rem;
+    
+    box-shadow: var(--business-glow);
+    /* --business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
+    --personal-glow */
+    
+}
+
+.category-option label {
+    text-align: center;
+}
+
