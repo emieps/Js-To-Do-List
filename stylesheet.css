@@ -54,7 +54,7 @@ label {
 }
 
 /* em --> relative to the parent font size */
-s
+
 
 /* Section styling */
 section {
@@ -124,6 +124,7 @@ label[for="category-options"] {
     flex-wrap: wrap;
     padding: 2rem;
     gap: 2rem;
+    /* align-items: center; */
     /* align-items: center;
     height: 100vh; */
 }
@@ -146,26 +147,38 @@ label[for="category-options"] {
     opacity: .5;
 }
 
-/* Grip: layout */
-/* Flex: componentes */
-.category-option .personal {
-    
-    accent-color: var(--personal);
-    border-radius: 0.5rem;
-    width: 20px;
-    height: 20px;
-    
+.category-option input[type="radio"]{
+    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+
 }
 
-.category-option .business {
-    accent-color: var(--business);
-    border-radius: 0.5rem;
-    width: 20px;
+/* Grip: layout */
+/* Flex: componentes */
+
+/* .category-option .personal { */
+    
+    /* accent-color: var(--personal);
+    border-radius: 0.5rem; */
+    /* width: 20px;
     height: 20px;
-}
+    
+} */
+
+/* .category-option .business { */
+    /* accent-color: var(--business);
+    border-radius: 0.5rem; */
+    /* width: 20px;
+    height: 20px; */
+/* } */
+
+
 
 .category-option label {
     text-align: center;
+}
+
+.category-option input[type="checkbox"] {
+    align-items: center;
 }
 
 .create-todo button[type="submit"] {
@@ -213,6 +226,7 @@ label[for="category-options"] {
 }
 
 .todo-item .todo-content{
+    display:block;
     flex-grow: 4;
     font-size: 1.125rem;
 }
@@ -265,8 +279,8 @@ label[for="category-options"] {
 } */
 
 .checkbox-round {
-    width: 1.3em;
-    height: 1.3em;
+    width: 20px;
+    height: 20px;
     background-color: white;
     border-radius: 50%;
     vertical-align: middle;
@@ -275,6 +289,9 @@ label[for="category-options"] {
     -webkit-appearance: none;
     outline: none;
     cursor: pointer;
+    /* align-items: center; */
+    /* text-align: center;
+     */
    
 }
 
