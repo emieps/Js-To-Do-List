@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="stylesheet.css">
     <title>To Do List</title>
 </head>
@@ -25,20 +24,23 @@
             <!-- H3 changed -->
             <h3>CREATE A TO DO</h3>
             <form>
-                <label for="todo-create" >What's on your todo?</label>
-                <input type="text" id="todo-create" class="create-todo" name="todo-create" placeholder="e.g. make cookies :3" ><br>
+                <label for="todo-create">What's on your todo?</label>
+                <input type="text" id="todo-create" class="create-todo" name="todo-create"
+                    placeholder="e.g. make cookies :3"><br>
                 <!-- Btn Groups  -->
                 <label for="category-options">Pick a category:</label>
                 <div class="category-options" id="category-option">
                     <!-- name attribute make the relatives  -->
                     <div class="category-option">
-                    <input type="radio" id="business"  class="category-option bubble business" name="category" value="business"><br>
-                    <label for="business">Business</label>
-                      </div>
+                        <input type="radio" id="business" class="category-option bubble business" name="category"
+                            value="business"><br>
+                        <label for="business">Business</label>
+                    </div>
                     <!-- Best practice  -->
                     <div class="category-option">
-                    <input type="radio" id="personal" class="category-option personal" name="category" value="personal"><br>
-                    <label for="personal">Personal</label>
+                        <input type="radio" id="personal" class="category-option personal" name="category"
+                            value="personal"><br>
+                        <label for="personal">Personal</label>
                     </div>
                 </div>
                 <button type="submit" class="create-todo" value="Submit">ADD TODO</button>
@@ -47,36 +49,46 @@
 
         <!-- section.todo-list -->
         <section class="todo-list">
-            <h3>To DO LIST</h3>
-            <!-- div.list#todo-list -->
-            <div class="list-todo-item" id="todo-list">
-                <!-- Dummy info for styling  -->
-                <div class="todo-list todo-item">
-                    <!-- Check box to  strikethrougt the ocntent -->
-                    <label class="field-group">
-                        <input type="checkbox" class="field-checkbox">
+            <!-- h3 todo -->
+            <h3>TODO LIST</h3>
+            <!-- todo list where all teh item will be display -->
+            <div class="list" id="todo-list">
+                <!-- div to contains todo items -->
+                <div class="todo-item">
+                    <!-- Implicit label -->
+                    <label >
+                        <!-- Input checkbox to be able to strikethrought the to do item -->
+                        <input type="checkbox"  class="checkbox-round" name="" id="">
+                        <span class="bubble bussinesss"></span>
                     </label>
 
                     <div class="todo-content">
-                        <!-- Check box to  strikethrougt the ocntent -->
-                        <label>
-                            <input type="text" class="todo-item" name="todo-item" value="make a video" readonly><br><br>
-                        </label>
+                        <input type="text" class="todo-content" value="Make video" readonly>
                     </div>
-                    <!-- Actions buttons  -->
                     <div class="actions">
                         <button class="edit">EDIT</button>
                         <button class="delete">DELETE</button>
                     </div>
+
                 </div>
-                <!-- / End o Dummy info for styling  -->
+                <div class="todo-item">
+                    <!-- Implicit label -->
+                    <label>
+                        <!-- Input checkbox to be able to strikethrought the to do item -->
+                        <input type="checkbox" name="" id="">
+                        <span class="bubble bussinesss"></span>
+                    </label>
 
-                <!-- Dummy info for styling  -->
-                <section class="todo-list">
-                    <h3>TODO LIST</h3>
-                    <div class="list" id="todo-list"></div>
+                    <div class="todo-content">
+                        <input type="text" class="todo-content" value="Make video" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">EDIT</button>
+                        <button class="delete">DELETE</button>
+                    </div>
+
+                </div>
             </div>
-
         </section>
     </main>
     <!-- npx live-server .: to see html doc while is being edited -->

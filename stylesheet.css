@@ -200,3 +200,38 @@ label[for="category-options"] {
 .list-todo-item{
     display: block;
 }
+
+
+
+
+
+
+
+/* Round chechbox */
+.checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid var(--personal);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+   
+}
+
+.checkbox-round:checked {
+    background-color: var(--personal);
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+.checkbox-round:not(checked) {
+    background-color: white;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
