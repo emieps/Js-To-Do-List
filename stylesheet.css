@@ -146,19 +146,15 @@ label[for="category-options"] {
     opacity: .5;
 }
 
-
-
-
 /* Grip: layout */
 /* Flex: componentes */
 .category-option .personal {
-
+    
     accent-color: var(--personal);
     border-radius: 0.5rem;
     width: 20px;
     height: 20px;
-
-
+    
 }
 
 .category-option .business {
@@ -167,8 +163,6 @@ label[for="category-options"] {
     width: 20px;
     height: 20px;
 }
-
-
 
 .category-option label {
     text-align: center;
@@ -201,20 +195,82 @@ label[for="category-options"] {
     display: block;
 }
 
+.todo-item{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1.125rem;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    color: var(--dark);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+}
+
+.todo-item .todo-content{
+    flex-grow: 4;
+    font-size: 1.125rem;
+}
+
+.edit {
+    /* border: 1px solid red; */
+    padding: 1rem; 
+    /* padding: 0.5rem 0.5rem; */
+    color: #FFF;
+    background-color: var(--primary);
+    border-radius: 0.5em;
+    box-shadow: var(--personal-glow);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    /* margin-bottom: 2rem; */
+}
+
+.delete {
+    /* border: 1px solid red; */
+    padding: 1rem; 
+    /* padding: 0.5rem 0.5rem; */
+    color: #FFF;
+    background-color: var(--danger);
+    border-radius: 0.5em;
+    box-shadow: var(--danger);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    /* margin-bottom: 2rem; */
+}
 
 
+.edit:hover, .delete:hover {
+    opacity: 0.75;
+}
 
 
+/* Round chechbox
+.checkbox-round .personal{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid var(--personal);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+   
+} */
 
-
-/* Round chechbox */
 .checkbox-round {
     width: 1.3em;
     height: 1.3em;
     background-color: white;
     border-radius: 50%;
     vertical-align: middle;
-    border: 1px solid var(--personal);
+    /* border: 2px solid var(--personal); */
     appearance: none;
     -webkit-appearance: none;
     outline: none;
@@ -222,12 +278,30 @@ label[for="category-options"] {
    
 }
 
-.checkbox-round:checked {
+.personal{
+    border: 2px solid var(--personal);
+}
+
+.business{
+    border: 2px solid var(--business);
+}
+
+.personal:checked{
     background-color: var(--personal);
+}
+
+.business:checked{
+    background-color: var(--business);
+}
+
+.checkbox-round:checked {
+    /* background-color: var(--personal); */
     -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
 }
+
+
 
 .checkbox-round:not(checked) {
     background-color: white;
