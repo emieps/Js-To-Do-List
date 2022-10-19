@@ -1,14 +1,11 @@
 // Add btn
 const addTodoBtn = document.querySelector("#add-todo-btn");
-// // Div cibtaiber of items 
-// listTodoItems = document.querySelector('#todo-list')
+const listTodoItems = document.querySelector('#todo-list'); 
+const formItemInput = document.querySelector('#todo-create'); 
+const formItemCategoryBusiness = document.querySelector('#business'); 
+const formItemCategoryPersonal = document.querySelector('#personal'); 
 
-const listTodoItems = document.querySelector('#todo-list')
 
-const TodoItemsContainer = {
-    listTodoItems: document.querySelector('#todo-list')
-
-}
 
 
 const createDiv = (classNameDiv) => {
@@ -19,7 +16,6 @@ const createDiv = (classNameDiv) => {
 }
 
 const createToDoCheckbox = (classNameCategory) => {
-
     // label
     const todoItemLabel = document.createElement("label");
     // Input checkbox 
@@ -32,9 +28,7 @@ const createToDoCheckbox = (classNameCategory) => {
 
 }
 
-
-
-const createContent = () => {
+const createContent = (todoContent) => {
     // Content
     // to do content div 
     const todoContentDiv = createDiv("todo-content")
@@ -42,7 +36,7 @@ const createContent = () => {
     const todoContentInput = document.createElement("input");
     todoContentInput.setAttribute("type", "text");
     todoContentInput.setAttribute("class", "todo-content");
-    todoContentInput.setAttribute("value", "Make video");
+    todoContentInput.setAttribute("value", todoContent);
     todoContentDiv.appendChild(todoContentInput)
     return todoContentDiv
 
@@ -75,10 +69,11 @@ const createToDoButtons = () => {
     return todoBtnDiv
 }
 
-const createItem = () => {
+const createItem = (todoContent, todoCategory) => {
     const toDoItemDiv = createDiv("todo-item");
-    const todoItemCategoryChecBox = createToDoCheckbox("business");
-    const todoContentInput = createContent();
+    const todoItemCategoryChecBox = createToDoCheckbox(todoCategory);
+    // content 
+    const todoContentInput = createContent(todoContent);
     const todoContentButtons = createToDoButtons();
     toDoItemDiv.appendChild(todoItemCategoryChecBox)
     toDoItemDiv.appendChild(todoContentInput)
@@ -88,10 +83,16 @@ const createItem = () => {
 }
 
 
-
 addTodoBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    const item = createItem()
-    listTodoItems.appendChild(item )
+
+    if(formItemCategoryBusiness.checked == true){
+        const item = createItem(formItemInput.value, formItemCategoryBusiness.value)
+        listTodoItems.appendChild(item)
+    } else{ 
+        const item = createItem(formItemInput.value, formItemCategoryPersonal.value)
+        listTodoItems.appendChild(item)
+    }
+   
 })
 
