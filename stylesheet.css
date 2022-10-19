@@ -152,26 +152,6 @@ label[for="category-options"] {
 
 }
 
-/* Grip: layout */
-/* Flex: componentes */
-
-/* .category-option .personal { */
-    
-    /* accent-color: var(--personal);
-    border-radius: 0.5rem; */
-    /* width: 20px;
-    height: 20px;
-    
-} */
-
-/* .category-option .business { */
-    /* accent-color: var(--business);
-    border-radius: 0.5rem; */
-    /* width: 20px;
-    height: 20px; */
-/* } */
-
-
 
 .category-option label {
     text-align: center;
@@ -263,21 +243,6 @@ label[for="category-options"] {
     opacity: 0.75;
 }
 
-
-/* Round chechbox
-.checkbox-round .personal{
-    width: 1.3em;
-    height: 1.3em;
-    background-color: white;
-    border-radius: 50%;
-    vertical-align: middle;
-    border: 2px solid var(--personal);
-    appearance: none;
-    -webkit-appearance: none;
-    outline: none;
-    cursor: pointer;
-   
-} */
 
 .checkbox-round {
     width: 20px;
