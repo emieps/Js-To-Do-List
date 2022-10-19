@@ -144,7 +144,7 @@ label[for="category-options"] {
 
 .category-option:hover{
 
-    opacity: .5;
+    opacity: .75;
 }
 
 .category-option input[type="radio"]{
@@ -225,10 +225,11 @@ label[for="category-options"] {
     box-shadow: var(--shadow);
 }
 
-.todo-item .todo-content{
+.todo-item .todo-content, input.todo-content{
     display:block;
     flex-grow: 4;
     font-size: 1.125rem;
+    width: 75%;
 }
 
 .edit {
@@ -316,6 +317,7 @@ label[for="category-options"] {
     -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
+    text-decoration: line-through
 }
 
 
@@ -327,5 +329,7 @@ label[for="category-options"] {
     transition: background-color 1000ms linear;
 }
 
-
-/* hola */
+.checked{
+    text-decoration: line-through;
+    color: var(--grey);
+}
