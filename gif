@@ -1,0 +1,45 @@
+[33m0c62229[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: pull: Fast-forward
+[33m6c6dcbd[m[33m ([m[1;32mmaking-to-do[m[33m)[m HEAD@{1}: checkout: moving from adding-css to main
+[33ma913941[m[33m ([m[1;31morigin/adding-css[m[33m, [m[1;32madding-css[m[33m)[m HEAD@{2}: checkout: moving from d46fb96f9158bd2b1d80ac6bebf72b55a2552a06 to adding-css
+[33md46fb96[m HEAD@{3}: reset: moving to HEAD~1
+[33mb3d7ca3[m HEAD@{4}: reset: moving to b3d7ca3
+[33ma913941[m[33m ([m[1;31morigin/adding-css[m[33m, [m[1;32madding-css[m[33m)[m HEAD@{5}: reset: moving to a913941
+[33m6c6dcbd[m[33m ([m[1;32mmaking-to-do[m[33m)[m HEAD@{6}: checkout: moving from main to origin/main
+[33m6c6dcbd[m[33m ([m[1;32mmaking-to-do[m[33m)[m HEAD@{7}: checkout: moving from adding-css to main
+[33ma913941[m[33m ([m[1;31morigin/adding-css[m[33m, [m[1;32madding-css[m[33m)[m HEAD@{8}: commit: css styling done
+[33mb3d7ca3[m HEAD@{9}: commit: btn to do item btn
+[33md46fb96[m HEAD@{10}: commit: round checkboc
+[33mf2dbdf3[m HEAD@{11}: commit: own errors added
+[33mfc7a5b2[m HEAD@{12}: commit: styling category inputs
+[33mf663e7b[m HEAD@{13}: commit: divs and category options added
+[33m843fb39[m HEAD@{14}: commit: input style added
+[33m38e6669[m HEAD@{15}: commit: create input style
+[33m595a4fd[m HEAD@{16}: commit: greeting style added
+[33m5a283af[m HEAD@{17}: commit: label style
+[33m2e7aa77[m HEAD@{18}: commit: H3 styling
+[33m5d1ee75[m HEAD@{19}: commit: input and label inline display
+[33mbdeb7f1[m HEAD@{20}: commit: section style added
+[33m066e5fd[m HEAD@{21}: commit: body style added
+[33m509ceac[m HEAD@{22}: commit: itme input style added
+[33md583011[m HEAD@{23}: commit: added all the config
+[33m4a35139[m HEAD@{24}: commit: variables added
+[33me99134d[m HEAD@{25}: commit: new commit
+[33m6c6dcbd[m[33m ([m[1;32mmaking-to-do[m[33m)[m HEAD@{26}: checkout: moving from main to adding-css
+[33m6c6dcbd[m[33m ([m[1;32mmaking-to-do[m[33m)[m HEAD@{27}: pull: Fast-forward
+[33m41e4bc8[m HEAD@{28}: checkout: moving from making-to-do to main
+[33m6c6dcbd[m[33m ([m[1;32mmaking-to-do[m[33m)[m HEAD@{29}: pull: Fast-forward
+[33mfdabdf4[m[33m ([m[1;31morigin/making-to-do[m[33m)[m HEAD@{30}: Branch: renamed refs/heads/create-html to refs/heads/making-to-do
+[33mfdabdf4[m[33m ([m[1;31morigin/making-to-do[m[33m)[m HEAD@{32}: Branch: renamed refs/heads/htmladded to refs/heads/create-html
+[33mfdabdf4[m[33m ([m[1;31morigin/making-to-do[m[33m)[m HEAD@{34}: Branch: renamed refs/heads/making-to-do to refs/heads/htmladded
+[33mfdabdf4[m[33m ([m[1;31morigin/making-to-do[m[33m)[m HEAD@{36}: commit: todo elements added
+[33m86f1292[m HEAD@{37}: commit: comments deleted
+[33m7e31daa[m HEAD@{38}: commit: comments an diferences in the form
+[33m32fd690[m HEAD@{39}: commit: own form section added
+[33m41e4bc8[m HEAD@{40}: checkout: moving from main to making-to-do
+[33m41e4bc8[m HEAD@{41}: commit: docs created
+[33m8015a7d[m HEAD@{42}: reset: moving to 8015a7dac000e26c99df5691aacf70c66917b650
+[33m8015a7d[m HEAD@{43}: reset: moving to 8015a7dac000e26c99df5691aacf70c66917b650
+[33m8015a7d[m HEAD@{44}: reset: moving to 8015a7dac000e26c99df5691aacf70c66917b650
+[33m8015a7d[m HEAD@{45}: commit: docs created
+[33m118fa7f[m HEAD@{46}: Branch: renamed refs/heads/main to refs/heads/main
+[33m118fa7f[m HEAD@{48}: commit (initial): first commit
