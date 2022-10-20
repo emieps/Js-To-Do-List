@@ -302,3 +302,16 @@ label[for="category-options"] {
 .itemchecked{
     opacity: 0.70;
 }
+
+.edit.save{
+    /* border: 1px solid red; */
+    padding: 1rem; 
+    /* padding: 0.5rem 0.5rem; */
+    color: #FFF;
+    background-color: var(--business);
+    border-radius: 0.5em;
+    box-shadow: var(--busines-glow);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    /* margin-bottom: 2rem; */
+}

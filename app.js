@@ -1,9 +1,12 @@
 // Add btn
 const addTodoBtn = document.querySelector("#add-todo-btn");
-const listTodoItems = document.querySelector('#todo-list'); 
-const formItemInput = document.querySelector('#todo-create'); 
-const formItemCategoryBusiness = document.querySelector('#business'); 
-const formItemCategoryPersonal = document.querySelector('#personal'); 
+const listTodoItems = document.querySelector('#todo-list');
+const formItemInput = document.querySelector('#todo-create');
+const formItemCategoryBusiness = document.querySelector('#business');
+const formItemCategoryPersonal = document.querySelector('#personal');
+
+
+
 
 const createDiv = (classNameDiv) => {
     const todoItemDiv = document.createElement("div");
@@ -34,6 +37,7 @@ const createContent = (todoContent) => {
     todoContentInput.setAttribute("type", "text");
     todoContentInput.setAttribute("class", "todo-content");
     todoContentInput.setAttribute("value", todoContent);
+    todoContentInput.readOnly = true;
     todoContentDiv.appendChild(todoContentInput)
     return todoContentDiv
 
@@ -50,10 +54,7 @@ const createButton = (textNode, classButton) => {
     button.setAttribute("class", classButton);
     button.appendChild(textnodeButton);
     return button
-
-
 }
-
 
 const createToDoButtons = () => {
     // Tbnh to do item 
@@ -75,7 +76,7 @@ const createItem = (todoContent, todoCategory) => {
     toDoItemDiv.appendChild(todoItemCategoryChecBox)
     toDoItemDiv.appendChild(todoContentInput)
     toDoItemDiv.appendChild(todoContentButtons)
-    return  toDoItemDiv
+    return toDoItemDiv
 
 }
 
@@ -83,45 +84,60 @@ const createItem = (todoContent, todoCategory) => {
 addTodoBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if(formItemCategoryBusiness.checked == true){
+    if (formItemCategoryBusiness.checked == true) {
         const item = createItem(formItemInput.value, formItemCategoryBusiness.value)
         listTodoItems.appendChild(item)
-    } else{ 
+    } else {
         const item = createItem(formItemInput.value, formItemCategoryPersonal.value)
         listTodoItems.appendChild(item)
     }
-   
+
 })
 
 
 
 listTodoItems.addEventListener('click', (e) => {
 
-    
-    let target = e.target; 
- 
+
+    let target = e.target;
+
     // Delete
-    if(target.nodeName == 'BUTTON' & target.className == "delete" ){
+    if (target.nodeName == 'BUTTON' & target.className == "delete") {
         targetParent = target.parentNode.parentNode
         targetParent.remove()
     }
 
-    if(target.nodeName == 'BUTTON' & target.className == "edit" ){
-        targetParent = target.parentNode.parentNode
-        targetParent.remove()
+    if(target.nodeName == 'BUTTON' & target.className == "edit"){
+        const targetInput = target.parentNode.parentNode.childNodes[1].childNodes[0]
+        if (targetInput.readOnly == true){
+            targetInput.readOnly = false
+            targetInput.style.opacity = 0.50;
+           target.style.backgroundColor = '#3A82EE';
+            
+
+        } else {
+            targetInput.readOnly = true
+            targetInput.style.opacity = 1;
+            target.style.backgroundColor = '#EA40A4';
+        }
+
     }
 
+    if (target.type == 'checkbox') {
 
-
-    if(target.type == 'checkbox'){
-     
         targetInput = target.parentNode.parentNode.childNodes[1].childNodes[0]
         targetInput.classList.toggle('checked')
         target.parentNode.parentNode.classList.toggle('itemchecked')
-        
+
         console.log(targetInput)
-      
+
     }
 
 
 })
+
+
+
+
+
+
