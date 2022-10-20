@@ -1,6 +1,7 @@
 // Add btn
 const addTodoBtn = document.querySelector("#add-todo-btn");
 const listTodoItems = document.querySelector('#todo-list');
+const form = document.querySelector('#todo-form');
 const formItemInput = document.querySelector('#todo-create');
 const formItemCategoryBusiness = document.querySelector('#business');
 const formItemCategoryPersonal = document.querySelector('#personal');
@@ -86,6 +87,7 @@ addTodoBtn.addEventListener("click", (e) => {
         const item = createItem(formItemInput.value, formItemCategoryPersonal.value)
         listTodoItems.appendChild(item)
     }
+    form.reset()
 
 })
 
