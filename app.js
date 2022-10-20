@@ -5,9 +5,6 @@ const formItemInput = document.querySelector('#todo-create');
 const formItemCategoryBusiness = document.querySelector('#business');
 const formItemCategoryPersonal = document.querySelector('#personal');
 
-
-
-
 const createDiv = (classNameDiv) => {
     const todoItemDiv = document.createElement("div");
     todoItemDiv.setAttribute("class", classNameDiv);
@@ -25,7 +22,6 @@ const createToDoCheckbox = (classNameCategory) => {
     // label 
     todoItemLabel.appendChild(todoItemInput);
     return todoItemLabel
-
 }
 
 const createContent = (todoContent) => {
@@ -83,7 +79,6 @@ const createItem = (todoContent, todoCategory) => {
 
 addTodoBtn.addEventListener("click", (e) => {
     e.preventDefault();
-
     if (formItemCategoryBusiness.checked == true) {
         const item = createItem(formItemInput.value, formItemCategoryBusiness.value)
         listTodoItems.appendChild(item)
@@ -95,26 +90,20 @@ addTodoBtn.addEventListener("click", (e) => {
 })
 
 
-
 listTodoItems.addEventListener('click', (e) => {
-
-
     let target = e.target;
-
     // Delete
     if (target.nodeName == 'BUTTON' & target.className == "delete") {
         targetParent = target.parentNode.parentNode
         targetParent.remove()
     }
 
-    if(target.nodeName == 'BUTTON' & target.className == "edit"){
+    if (target.nodeName == 'BUTTON' & target.className == "edit") {
         const targetInput = target.parentNode.parentNode.childNodes[1].childNodes[0]
-        if (targetInput.readOnly == true){
+        if (targetInput.readOnly == true) {
             targetInput.readOnly = false
             targetInput.style.opacity = 0.50;
-           target.style.backgroundColor = '#3A82EE';
-            
-
+            target.style.backgroundColor = '#3A82EE';
         } else {
             targetInput.readOnly = true
             targetInput.style.opacity = 1;
@@ -128,9 +117,6 @@ listTodoItems.addEventListener('click', (e) => {
         targetInput = target.parentNode.parentNode.childNodes[1].childNodes[0]
         targetInput.classList.toggle('checked')
         target.parentNode.parentNode.classList.toggle('itemchecked')
-
-        console.log(targetInput)
-
     }
 
 
