@@ -24,7 +24,7 @@
 }
 
 main {
-    margin-left: 4rem;
+    margin-left: 10rem;
     margin-right: 10rem;
     margin-top: 2rem;
 }
@@ -54,8 +54,6 @@ label {
 }
 
 /* em --> relative to the parent font size */
-
-
 /* Section styling */
 section {
     margin: 2rem 0 2rem 0;
@@ -120,13 +118,9 @@ label[for="category-options"] {
 
 .category-options {
     display: flex;
-    /* justify-content: center; */
     flex-wrap: wrap;
     padding: 2rem;
     gap: 2rem;
-    /* align-items: center; */
-    /* align-items: center;
-    height: 100vh; */
 }
 
 .category-option {
@@ -142,12 +136,11 @@ label[for="category-options"] {
 
 }
 
-.category-option:hover{
-
+.category-option:hover {
     opacity: .75;
 }
 
-.category-option input[type="radio"]{
+.category-option input[type="radio"] {
     padding: 0.75rem 0.75rem 0.75rem 0.75rem;
 
 }
@@ -179,18 +172,17 @@ label[for="category-options"] {
     opacity: 0.75;
 }
 
-.todo-list .list{
-    margin: 1rem 0; 
-} 
+.todo-list .list {
+    margin: 1rem 0;
+}
 
 
-.list-todo-item{
+.list-todo-item {
     display: block;
 }
 
-.todo-item{
+.todo-item {
     display: flex;
-    /* flex-wrap: wrap; */
     margin-bottom: 1rem;
     padding: 0.5rem;
     gap: 2rem;
@@ -205,41 +197,37 @@ label[for="category-options"] {
     box-shadow: var(--shadow);
 }
 
-.todo-item .todo-content, input.todo-content{
-    display:block;
+.todo-item .todo-content,
+input.todo-content {
+    display: block;
     flex-grow: 4;
     font-size: 1.125rem;
     width: 75%;
 }
 
 .edit {
-    /* border: 1px solid red; */
-    padding: 1rem; 
-    /* padding: 0.5rem 0.5rem; */
+    padding: 1rem;
     color: #FFF;
     background-color: var(--primary);
     border-radius: 0.5em;
     box-shadow: var(--personal-glow);
     cursor: pointer;
     transition: 0.2s ease-in-out;
-    /* margin-bottom: 2rem; */
 }
 
 .delete {
-    /* border: 1px solid red; */
-    padding: 1rem; 
-    /* padding: 0.5rem 0.5rem; */
+    padding: 1rem;
     color: #FFF;
     background-color: var(--danger);
     border-radius: 0.5em;
     box-shadow: var(--danger);
     cursor: pointer;
     transition: 0.2s ease-in-out;
-    /* margin-bottom: 2rem; */
 }
 
 
-.edit:hover, .delete:hover {
+.edit:hover,
+.delete:hover {
     opacity: 0.75;
 }
 
@@ -250,42 +238,34 @@ label[for="category-options"] {
     background-color: white;
     border-radius: 50%;
     vertical-align: middle;
-    /* border: 2px solid var(--personal); */
     appearance: none;
     -webkit-appearance: none;
     outline: none;
     cursor: pointer;
-    /* align-items: center; */
-    /* text-align: center;
-     */
-   
 }
 
-.personal{
+.personal {
     border: 2px solid var(--personal);
 }
 
-.business{
+.business {
     border: 2px solid var(--business);
 }
 
-.personal:checked{
+.personal:checked {
     background-color: var(--personal);
 }
 
-.business:checked{
+.business:checked {
     background-color: var(--business);
 }
 
 .checkbox-round:checked {
-    /* background-color: var(--personal); */
     -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
     text-decoration: line-through
 }
-
-
 
 .checkbox-round:not(checked) {
     background-color: white;
@@ -294,7 +274,21 @@ label[for="category-options"] {
     transition: background-color 1000ms linear;
 }
 
-.checked{
+.checked {
     text-decoration: line-through;
     color: var(--grey);
+}
+
+.itemchecked {
+    opacity: 0.70;
+}
+
+.edit.save {
+    padding: 1rem;
+    color: #FFF;
+    background-color: var(--business);
+    border-radius: 0.5em;
+    box-shadow: var(--busines-glow);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
