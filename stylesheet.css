@@ -298,3 +298,7 @@ label[for="category-options"] {
     text-decoration: line-through;
     color: var(--grey);
 }
+
+.itemchecked{
+    opacity: 0.70;
+}

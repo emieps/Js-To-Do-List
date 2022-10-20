@@ -115,7 +115,10 @@ listTodoItems.addEventListener('click', (e) => {
 
     if(target.type == 'checkbox'){
      
-        targetInput = target.parentNode.parentNode.childNodes[1].classList.toggle('checked')
+        targetInput = target.parentNode.parentNode.childNodes[1].childNodes[0]
+        targetInput.classList.toggle('checked')
+        target.parentNode.parentNode.classList.toggle('itemchecked')
+        
         console.log(targetInput)
       
     }
