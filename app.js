@@ -105,11 +105,20 @@ listTodoItems.addEventListener('click', (e) => {
         targetParent = target.parentNode.parentNode
         targetParent.remove()
     }
-    if(target.type == 'checkbox'){
-        // targetParent = target.parentNode.parentNode.childNodes[5].classList.toggle(checked)
-        targetInput = target.parentNode.parentNode.childNodes[5].childNodes[1]
-        targetInput.classList.toggle("checked")
-  
+
+    if(target.nodeName == 'BUTTON' & target.className == "edit" ){
+        targetParent = target.parentNode.parentNode
+        targetParent.remove()
     }
+
+
+
+    if(target.type == 'checkbox'){
+     
+        targetInput = target.parentNode.parentNode.childNodes[1].classList.toggle('checked')
+        console.log(targetInput)
+      
+    }
+
 
 })
